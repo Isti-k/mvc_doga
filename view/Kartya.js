@@ -14,18 +14,22 @@ export default class Kartya{
 
 
     megjelenit(){
-        `<div class=lap>
-            <p>${this.#elem}</p>
-        </div>`
+        this.#szuloelem.append(`
+            <div class="card kivalaszt col-lg-3 col-md-4 col-sm-6 ">
+                <div class="card-body">                 
+                    <img src="${this.#elem}" alt="" class="card-img-top">
+               </div>
+            </div>
+            `);
     }
 
 
     kattintas(){
-        this.#kattintas.on("click" (lista) =>{
-
+        this.#szuloelem.on("click", (lista) =>{
+            
         })
     }
-    
+
 
 }
 
